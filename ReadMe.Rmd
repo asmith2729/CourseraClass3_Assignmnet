@@ -1,0 +1,64 @@
+---
+title: "ReadMe"
+author: "AdamCSmith"
+date: "March 4, 2019"
+output: html_document
+---
+
+
+## Project Summary 
+
+This project is the final assignment of the Getting and Cleaning Data Course on Coursera (see: https://www.coursera.org/learn/data-cleaning/home/welcome)
+
+This document explains the files contained within this github repo and how to use them.  It also explain the methodology of how data is combined in the code.
+
+
+## Explanation of Source Files Used
+There are many files in the initial download and after review it doesn't appear that all are needed.  I have used the below files, listed with an explanation what each contains.
+* activity_labels.txt - This is the relationship between the activity number in the data and a verbal description of each activity
+* features.txt - This is assumed to be a list of the column headers of the actual data files
+
+* train/X_train.txt - Contains the measurement results taken for in the training set
+* train/subject_train.txt - Contains the subject information that each row of data is connected to in X_train data
+* train/y_train.txt - Contains the activity information that each row of data is connected to in the X_train data
+
+* test/X_test.txt - Contains the measurement results taken in the test set
+* test/subject_test.txt - Contains the subject information that each row of data is connected to in X_test data
+* test/y_test.txt - Contains the activity information that each row of data is connected to in the X_test data
+
+
+
+
+
+
+
+## run_analysis.R
+This is the script that completes the work of the assignment.  It is divided into several sections.  
+
+
+
+
+#### Section One - Download and unzip files
+This portion links to the website containing the data and downloads the file into the users working directory.  The file is them unzipped, also in the working directory. 
+
+#### Section Two - Load needed files into a dataframe
+I reviewed the files and chose to load only files that will be needed for the assignment, it appears not all files in the download will be used.  The Codebook.md file has a desciption of each file and why I used/didn't use it. 
+
+#### Section Three - Transform the data 
+This is where I combine and update the dataframes as requested by the assignments
+
+At various points in the code comments I have pointed out which steps of the assignment are getting completed.
+
+
+#### Section Four - Summarize and output
+The data created in Section Three is summarized and an output file is written to the users working directory
+
+
+
+
+## Codebook.doc
+Codebook of the variables that were generated in this script
+
+
+## Output File - "step5.csv"
+Copy of the file submitted for the assignment.
