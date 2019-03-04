@@ -63,5 +63,5 @@ step4 <- subset(step4, select=-c(Activity))
 #Use the aggregate function to group by Subj_Id and Actv_Desc and take the mean of all the remaining columns
 #This should satisfy the criteria for Step5
 step5<-aggregate(step4[,3:81], list (Subject_Id=step4$Subj_Id, Activity_Description=step4$Actv_Desc),mean)
-write.csv(step5,"Week4_Assignment_ACSmith.csv",  row.names=FALSE)
+write.table(step5,"Week4_Assignment_ACSmith.txt",  row.names=FALSE)
 

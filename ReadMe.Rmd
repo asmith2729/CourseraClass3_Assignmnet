@@ -60,5 +60,5 @@ The data created in Section Three is summarized and an output file is written to
 Codebook of the variables that were generated in this script
 
 
-## Output File - "step5.csv"
+## Output File - "Week4_Assignment_ACSmith.csv"
 Copy of the file submitted for the assignment.
